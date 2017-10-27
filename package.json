@@ -1,0 +1,12 @@
+{
+  "name": "webpack-asset-info",
+  "version": "1.0.0",
+  "description": "A simple webpack plugin providing the ability to execute a callback on a filtered list of assets generated during a build.",
+  "main": "index.js",
+  "repository": "git@github.com:relayfoods/webpack-asset-info.git",
+  "author": "Tim Farley <tim.farley@doortodoororganics.com>",
+  "license": "MIT",
+  "dependencies": {
+    "micromatch": "^3.1.3"
+  }
+}
