@@ -40,4 +40,7 @@ Defaults to `'**/*.js'`.
 
 `globOptions: {}` - further control over glob matching.  [Everything listed here supported](https://github.com/micromatch/micromatch#options).
 
-`callback: (date, time, assets) => {}` - Callback to execute on the info from the filtered assets.
+`callback: (date, time, assets) => {}` - Callback to execute on the info from the filtered assets.  Passes the following params:
+- `date`:  a JS Date representation of the time at which this plugin was executed.  Essentially the build date/time.
+- `time`: number of milliseconds it took to complete the build
+- `assets`: the filtered list of [webpack asset objects](https://webpack.js.org/api/stats/#asset-objects), with info about the bundles generated from the final webpack build
